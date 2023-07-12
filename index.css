@@ -222,3 +222,8 @@ body::-webkit-scrollbar-track {
 .menu a:hover::before {
     transform: scaleX(1);
 }
+
+.marginRight-10{
+
+    margin-right: 30px;
+}
