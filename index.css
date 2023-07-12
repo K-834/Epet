@@ -1,80 +1,14 @@
-/*body {
-    margin: 0;
-}
-
-header {
-
-    display: flex;
-    justify-content: space-between;
-    width: 100%;
-}
-
-.pad {
-    padding: 0 30px 0 10px;
-}
-
-nav {
-    display: flex;
-    align-items: center;
-    gap: 30px;
-}
-
-/*-------------------------------------------------------*/
-/*-------------------------------------------------------*/
-/*-------------------------------------------------------*/
-/*-------------------------------------------------------*/
-/*img {
-    border-radius: 10px;
-}
-
-.tamaño {
-    display: flex;
-    justify-content: center;
-    background-color: brown;
-    height: 100%;
-    width: 100%;
-    flex-wrap: wrap;
-    padding: 50px 0px;
-    border: 5px solid blue;
-    clip-path: polygon(0 0, 100% 0, 100% 82%, 0 100%);
-}
-
-/*
-div>* {
-    border: 5px solid blue;
-}
-*/
-/*
-.formato {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-.formato img {
-    height: 200px;
-}
-
-.textDerecho {
-    height: 100%;
-    display: flex;
-    flex-direction: column;
-    padding: 0px 5px;
-    margin-right: 30px;
-    align-items: center;
-    width: 50%;
-}
-
-.textDerecho h1 {
-    font-size: 7vh;
-    margin-bottom: 10px;
-    margin-top: 0px;
-}
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script&family=Rubik:wght@800&display=swap');
 
 /**********************************************************/
 /********************************BUTTON**************************/
 /**********************************************************/
 /**********************************************************/
+.font-firma {
+    font-family: 'Dancing Script';
+    font-size: 300%;
+}
+
 .frame {
     width: 90%;
     margin: 40px auto;
@@ -213,7 +147,8 @@ body::-webkit-scrollbar-track {
     height: 2px;
     /*  background: linear-gradient(to right, #b47dcd, #e878a2, #eb85ab);
     */
-    background: linear-gradient(90deg, rgba(99,201,238,1) 0%, rgba(9,135,254,1) 14%, rgba(255,154,117,1) 75%, rgba(255,154,117,1) 100%); z-index: 1;
+    background: linear-gradient(90deg, rgba(99, 201, 238, 1) 0%, rgba(9, 135, 254, 1) 14%, rgba(255, 154, 117, 1) 75%, rgba(255, 154, 117, 1) 100%);
+    z-index: 1;
     transform: scaleX(0);
     transform-origin: left;
     transition: transform 0.3s ease-in-out;
@@ -223,7 +158,46 @@ body::-webkit-scrollbar-track {
     transform: scaleX(1);
 }
 
-.marginRight-10{
+.marginRight-10 {
 
     margin-right: 30px;
+}
+
+
+@media (max-width: 1200px) {
+    .bgPrincipal {
+        flex-direction: column;
+
+    }
+
+    .marginTop-50px {
+        margin-top: 50px;
+        padding: 0px;
+
+    }
+
+    .frame {
+        margin-top: 0px;
+
+    }
+
+    .min-height-100vh {
+        min-height: 80vh;
+    }
+
+    .margin-left-10 {
+        margin-left: 10px;
+        text-align: center;
+
+    }
+}
+
+.whatsapp-color:hover{
+    color: #25D366;
+    transition: color 0.6s ease;
+}
+
+.facebook-color:hover{
+    color: #1877F2;
+    transition: color 0.6s ease;
 }
