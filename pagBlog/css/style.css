@@ -382,13 +382,13 @@ Projects
 
 .cd-projects-previews li:nth-of-type(3) a,
 .cd-projects > li:nth-of-type(3) .preview-image {
-  background: #e7d5a4 url(../img/img-3.jpg) no-repeat center center;
+  background: #e7d5a4 url(../img/felizDog.png) no-repeat center center;
   background-size: cover;
 }
 
 .cd-projects-previews li:nth-of-type(4) a,
 .cd-projects > li:nth-of-type(4) .preview-image {
-  background: #835531 url(../img/img-4.jpg) no-repeat center center;
+  background: #835531 url(../img/baño.jpg) no-repeat center center;
   background-size: cover;
 }
 
