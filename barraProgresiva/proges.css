@@ -1,0 +1,88 @@
+.barraProgress::after,
+.barraProgress::before {
+    box-sizing: border-box;
+}
+
+.barraProgress {
+    font: inherit;
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+
+
+/* variables */
+:root {
+    /* colors */
+
+    --rw5-color-primary-hsl: 15, 97%, 73%;
+    --rw5-color-bg-hsl: 0, 0%, 100%;
+    --rw5-color-contrast-high-hsl: 230, 7%, 23%;
+    --rw5-color-contrast-higher-hsl: 230, 13%, 9%;
+    --rw5-color-accent-hsl: 342, 89%, 48%;
+    --rw5-color-contrast-lower-hsl: 240, 4%, 85%;
+
+    /* spacing */
+    --rw5-space-md: 1.25rem;
+    --rw5-space-lg: 2rem;
+    --rw5-space-sm: 0.75rem;
+    --rw5-space-xs: 0.5rem;
+
+    /* typography */
+    --rw5-text-sm: 0.833rem;
+}
+
+@media(min-width: 64rem) {
+    :root {
+        /* spacing */
+        --rw5-space-md: 2rem;
+        --rw5-space-lg: 3.125rem;
+        --rw5-space-sm: 1.125rem;
+        --rw5-space-xs: 0.75rem;
+    }
+}
+
+/* component */
+.reading-progressbar {
+    position: fixed;
+    z-index: 10;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 5px;
+    color: hsl(var(--rw5-color-primary-hsl));
+    pointer-events: none;
+    display: none;
+    transition: -webkit-transform 0.2s;
+    transition: transform 0.2s;
+    transition: transform 0.2s, -webkit-transform 0.2s;
+}
+
+.reading-progressbar--is-out {
+    -webkit-transform: translateY(-100%);
+    transform: translateY(-100%);
+}
+
+.reading-progressbar--is-active {
+    display: block;
+}
+
+.reading-progressbar::-webkit-progress-bar {
+    background-color: transparent;
+}
+
+.reading-progressbar::-webkit-progress-value {
+    background-color: currentColor;
+}
+
+.reading-progressbar::-moz-progress-bar {
+    background-color: currentColor;
+}
+
+.reading-progressbar__fallback {
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    background-color: currentColor;
+}
