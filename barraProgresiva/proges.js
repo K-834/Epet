@@ -93,3 +93,22 @@ Util.toggleClass = function(el, className, bool) {
     };
   }
 }());
+
+var botonRedireccionar = document.getElementById("formulario");
+
+var btnBlog = document.getElementById("blog");
+
+
+botonRedireccionar.addEventListener("click", function() {
+
+    var nuevaURL = "https://forms.gle/VVkaNJPcf4BPkk8K6"; 
+
+    window.open(nuevaURL, '_blank');
+});
+
+btnBlog.addEventListener("click", function() {
+
+  var nuevaURL = "pagBlog/blog.html"; 
+
+  window.open(nuevaURL, '_blank');
+});
