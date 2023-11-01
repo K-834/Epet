@@ -343,12 +343,20 @@ body::-webkit-scrollbar-track {
   transform: translate(0, 5%);
 }
 
+.centered-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 
 .cartas-funcionamiento2 {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
     gap: 20px;
     margin-left: 5%;
+    margin: 0 auto; 
+    max-width: 50%; 
+
   }
   
   .carta2 {
@@ -370,6 +378,7 @@ body::-webkit-scrollbar-track {
     height: 200px;
     border-radius: 10px;
   }
+
 
 
 .titulo{
